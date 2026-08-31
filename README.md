@@ -143,7 +143,7 @@ workflow, each layer is independently evaluated to identify failure points and m
 
 🔗 **[View Enterprise RAG Platform](https://github.com/MONAlIS-A/enterprise-rag-platform.git)**
 
-> Repository link will be updated with the project repository.
+
 
 ---
 
