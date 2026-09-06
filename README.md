@@ -4,19 +4,19 @@
 
 Welcome to my AI Engineering Portfolio.
 
-I am an **AI Engineer focused on building and engineering real-world AI systems**, with an emphasis on **LLM applications, Retrieval-Augmented Generation (RAG), AI agents, backend systems, evaluation, reliability, and production engineering**.
+I am an **AI Engineer focused on building and engineering real-world AI systems**, with an emphasis on **LLM applications, RAG, AI agents, evaluation, reliability, backend systems, and production engineering**.
 
-This repository serves as the central hub for my AI engineering work. Each major project is maintained in its own repository, with technical documentation, experiments, evaluation results, and engineering decisions documented alongside the implementation.
+This repository serves as the central hub for my AI engineering work. Each major project is maintained in its own repository, with implementation, technical documentation, experiments, evaluation results, and engineering decisions documented independently.
 
 ---
 
 ## 👩‍💻 About Me
 
-I am an AI Engineer with a strong interest in building **production-grade AI applications rather than isolated model demos**.
+I focus on building **production-oriented AI systems rather than isolated model demos**.
 
-My focus is on understanding an AI system end-to-end:
+My engineering approach considers the complete lifecycle of an AI system:
 
-**Problem → Data → Architecture → Model → Evaluation → Deployment → Monitoring → Optimization**
+**Problem → Requirements → Architecture → Implementation → Evaluation → Optimization → Production**
 
 I am particularly interested in systems where AI quality must be balanced with real-world engineering constraints such as:
 
@@ -28,13 +28,13 @@ I am particularly interested in systems where AI quality must be balanced with r
 * Maintainability
 * Observability
 
-My approach is not simply to make an AI system work, but to understand **why it works, where it fails, and how it can be improved**.
+My goal is not simply to make an AI system work, but to understand **why it works, where it fails, and how it can be improved measurably**.
 
 ---
 
 ## 🎯 AI Engineering Focus
 
-### Generative AI & LLMs
+### 🤖 Generative AI & LLMs
 
 * Large Language Model applications
 * Retrieval-Augmented Generation (RAG)
@@ -48,155 +48,113 @@ My approach is not simply to make an AI system work, but to understand **why it 
 * Grounded generation
 * Hallucination mitigation
 
-### RAG & Information Retrieval
+### 🔎 Retrieval & Information Systems
 
 * Document ingestion
 * Document processing
 * Chunking strategies
 * Embedding pipelines
 * Vector search
+* Dense retrieval
+* Sparse retrieval
 * Hybrid retrieval
 * Reranking
 * Context construction
 * Retrieval evaluation
-* Groundedness evaluation
 
-### AI Evaluation & Reliability
+### 🧪 AI Evaluation & Reliability
 
 * Retrieval evaluation
 * Generation evaluation
 * End-to-end RAG evaluation
+* Groundedness evaluation
 * Hallucination analysis
 * Failure analysis
 * Benchmarking
 * Regression testing
 * AI observability
 
-### Backend & AI Systems
+---
+
+## ⚙️ Backend & AI Systems
 
 * Python
 * FastAPI
-* REST APIs
+* Django
+* Django REST Framework
+* REST API design
 * PostgreSQL
 * Redis
 * RabbitMQ
 * Celery
+* Asynchronous processing
+* Background jobs
+* Distributed systems
+* Event-driven systems
 * Modular architecture
 * Clean Architecture
 * Microservice-oriented design
-
-### Production Engineering
-
 * Docker
-* Scalable system design
+
+---
+
+## 🏗️ Production Engineering
+
+* System design
 * API reliability
 * Caching
 * Asynchronous processing
 * Logging
 * Monitoring
+* Observability
 * Latency optimization
+* Throughput optimization
 * Cost optimization
 * Performance engineering
-
----
-
-# 🚀 Featured Projects
-
-## 1. Enterprise RAG Platform
-
-**Status:** 🟡 In Progress
-
-A production-oriented Retrieval-Augmented Generation platform designed to explore how enterprise AI systems can retrieve reliable information and generate grounded responses from organizational knowledge.
-
-### Key Focus
-
-* Document ingestion
-* Document processing
-* Intelligent chunking
-* Embedding generation
-* Vector retrieval
-* Reranking
-* Context engineering
-* Grounded generation
-* Hallucination detection
-* Retrieval evaluation
-* Generation evaluation
-* Latency optimization
-* Cost optimization
-* Observability
+* Failure handling
 * Scalability
-* Failure analysis
-
-### Engineering Approach
-
-The system is developed using an evaluation-driven workflow:
-
-**Build → Measure → Test → Break → Diagnose → Improve → Re-evaluate**
-
-Rather than treating the RAG pipeline as a simple:
-
-**Documents → Vector DB → LLM**
-
-workflow, each layer is independently evaluated to identify failure points and measure its impact on the overall system.
-
-### Repository
-
-🔗 **[View Enterprise RAG Platform](https://github.com/MONAlIS-A/enterprise-rag-platform.git)**
-
-
 
 ---
 
-# 🧪 Engineering & Evaluation Philosophy
+## 🔬 Engineering Philosophy
 
-I believe an AI system is not complete simply because it produces an answer.
+I believe production AI engineering is not only about selecting a capable model.
 
-A production AI system needs to be:
-
-* **Correct enough for its use case**
-* **Grounded in reliable information**
-* **Observable**
-* **Testable**
-* **Cost-efficient**
-* **Low-latency**
-* **Scalable**
-* **Reliable under failure**
-
-My engineering workflow is:
+The system around the model matters just as much:
 
 ```text
-Problem Definition
-        ↓
-System Design
-        ↓
+Problem
+   ↓
+Requirements
+   ↓
+Architecture
+   ↓
 Implementation
-        ↓
+   ↓
 Baseline
-        ↓
+   ↓
 Evaluation
-        ↓
-Failure Injection
-        ↓
-Root Cause Analysis
-        ↓
+   ↓
+Failure Analysis
+   ↓
 Optimization
-        ↓
+   ↓
 Re-evaluation
-        ↓
+   ↓
 Production Readiness
 ```
 
-I intentionally create failure scenarios during development to understand system limitations before deploying them to production.
+I intentionally evaluate failure scenarios during development to understand system limitations before production deployment.
 
 ---
 
-# 📊 What I Measure
+## 📊 What I Measure
 
 AI systems should be evaluated using measurable evidence rather than subjective impressions.
 
 Depending on the system, I evaluate:
 
-### AI Quality
+**AI Quality**
 
 * Accuracy
 * Relevance
@@ -204,7 +162,7 @@ Depending on the system, I evaluate:
 * Groundedness
 * Hallucination rate
 
-### Retrieval
+**Retrieval**
 
 * Recall@K
 * Precision@K
@@ -212,171 +170,77 @@ Depending on the system, I evaluate:
 * Hit Rate
 * NDCG
 
-### System Performance
+**System Performance**
 
 * Average latency
-* P95/P99 latency
+* P95 / P99 latency
 * Throughput
 * Resource utilization
 
-### Cost
+**Cost**
 
 * Cost per request
 * Token consumption
 * Model cost
 * Infrastructure cost
 
-### Reliability
+**Reliability**
 
 * Error rate
 * Timeout rate
 * Failure recovery
 * Regression performance
 
-Actual benchmark results are documented within individual project repositories.
+Detailed benchmarks and evaluation results are documented within individual project repositories.
 
 ---
 
-# 🧠 Selected Technical Areas
+## 🚀 Projects
 
-| Area           | Technologies / Concepts                        |
-| -------------- | ---------------------------------------------- |
-| Programming    | Python                                         |
-| LLM            | Generative AI, LLM APIs, Local LLMs            |
-| RAG            | Retrieval, Reranking, Context Engineering      |
-| Embeddings     | Sentence Embeddings, Vector Representations    |
-| Retrieval      | Dense, Sparse, Hybrid Search                   |
-| Backend        | FastAPI, REST APIs                             |
-| Database       | PostgreSQL                                     |
-| Vector Search  | Vector Databases / pgvector                    |
-| Caching        | Redis                                          |
-| Messaging      | RabbitMQ, Celery                               |
-| Architecture   | Clean Architecture, Modular Design             |
-| Infrastructure | Docker                                         |
-| Evaluation     | RAG Evaluation, Benchmarking, Failure Analysis |
-| Observability  | Logging, Metrics, Tracing                      |
+The portfolio projects are maintained independently so that each system can have its own implementation, experiments, evaluation, architecture, and technical documentation.
+
+**Explore the projects → [Projects](./Projects/README.md)**
 
 ---
 
-# 📁 Portfolio Structure
+## 📚 Current Learning
 
-Each major project has its own repository so that implementation, experiments, evaluation, and documentation remain independently maintainable.
-
-```text
-AI-Engineer-Portfolio
-│
-├── README.md
-│
-└── Projects
-       │
-       ├── Enterprise RAG Platform
-       ├── Enterprise AI Agent Platform
-       ├── AI Search Systems
-       └── Other AI Engineering Projects
-```
-
-The portfolio repository acts as the **central index**, while each project repository contains the complete technical implementation.
+* LLM & Transformer Systems
+* Retrieval & RAG
+* AI Agent Architecture
+* AI Evaluation & Reliability
+* Distributed Systems
+* AI Infrastructure
+* Machine Learning Systems
+* System Design
+* Production AI Architecture
 
 ---
 
-# 🔬 Project Documentation
+## 🧠 Engineering Approach
 
-For major projects, I document:
+I prefer a **measurement-driven and experiment-driven** approach to AI engineering.
 
-* Problem statement
-* Requirements
-* Architecture
-* Design decisions
-* Technical implementation
-* Experiments
-* Evaluation methodology
-* Failure cases
-* Root cause analysis
-* Performance benchmarks
-* Cost analysis
-* Latency analysis
-* Scalability considerations
-* Production considerations
-* Lessons learned
+Instead of assuming that a system is good because it produces plausible outputs, I try to:
 
-This allows each project to serve not only as a demonstration of implementation ability, but also as evidence of engineering decision-making.
+1. Establish a baseline
+2. Define measurable evaluation criteria
+3. Test system behavior
+4. Identify failure cases
+5. Perform root-cause analysis
+6. Optimize the system
+7. Re-evaluate the changes
+8. Document the engineering decisions
 
 ---
 
-# 📚 Continuous Learning
+## 📫 Contact
 
-My learning approach is project-driven.
+**GitHub:** [MONAlIS-A](https://github.com/MONAlIS-A)
 
-Instead of studying technologies in isolation, I connect foundational concepts to real AI systems.
+**LinkedIn:** [LinkedIn](https://www.linkedin.com/in/monalisa-monalisa-5a9b833a2/)
 
-For example:
-
-```text
-Tokenization
-      ↓
-Embeddings
-      ↓
-Transformer / LLM
-      ↓
-Retrieval
-      ↓
-RAG
-      ↓
-Evaluation
-      ↓
-Production AI System
-```
-
-This allows me to understand both the **underlying concepts** and their **practical engineering applications**.
-
----
-
-# 🏗️ Current Focus
-
-### Current Project
-
-**Enterprise RAG Platform**
-
-Current areas of exploration:
-
-* RAG architecture
-* Retrieval quality
-* LLM generation
-* Evaluation
-* Hallucination mitigation
-* Production reliability
-* Latency optimization
-* Cost optimization
-* Scalable AI architecture
-
----
-
-# 📈 Long-Term Engineering Goals
-
-My goal is to become a strong **Senior AI Engineer** capable of taking AI systems from an initial idea to production.
-
-I am particularly interested in:
-
-* LLM-powered applications
-* Enterprise AI
-* AI agents
-* Retrieval systems
-* AI infrastructure
-* Evaluation systems
-* Scalable AI architectures
-* Production ML/AI systems
-
-The long-term objective is to build AI systems that are not only intelligent, but also **reliable, measurable, scalable, and economically viable**.
-
----
-
-# 📫 Contact
-
-**GitHub:** [Your GitHub Profile](https://github.com/MONAlIS-A)
-
-**LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/monalisa-monalisa-5a9b833a2/)
-
-**Email:** [Your Professional Email](monalisamonalisa577@gmail.com)
+**Email:** [monalisamonalisa577@gmail.com](mailto:monalisamonalisa577@gmail.com)
 
 ---
 
