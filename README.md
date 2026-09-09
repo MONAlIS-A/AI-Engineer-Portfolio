@@ -27,6 +27,7 @@ I am particularly interested in systems where AI quality must be balanced with r
 * Scalability
 * Maintainability
 * Observability
+* Security
 
 My goal is not simply to make an AI system work, but to understand **why it works, where it fails, and how it can be improved measurably**.
 
